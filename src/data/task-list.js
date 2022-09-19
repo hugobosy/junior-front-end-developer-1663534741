@@ -1,9 +1,10 @@
-export const taksList = [
+export const taskList = [
   {
     title: "application setup",
     status: "complete",
     businessContext: [
       {
+        id: 1,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -18,7 +19,8 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
-        author: "Olga Nelson",
+        id: 2,
+        author: "Olga Nienelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
         content:
@@ -32,6 +34,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 3,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -52,6 +55,7 @@ export const taksList = [
     status: "complete",
     businessContext: [
       {
+        id: 1,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -66,6 +70,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 2,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -80,6 +85,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 3,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -100,6 +106,7 @@ export const taksList = [
     status: "complete",
     businessContext: [
       {
+        id: 1,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -114,6 +121,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 2,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -128,6 +136,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 3,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -148,6 +157,7 @@ export const taksList = [
     status: "active",
     businessContext: [
       {
+        id: 1,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -162,6 +172,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 2,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -176,6 +187,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 3,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -196,6 +208,7 @@ export const taksList = [
     status: "disabled",
     businessContext: [
       {
+        id: 1,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -210,6 +223,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 2,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
@@ -224,6 +238,7 @@ export const taksList = [
           "You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.",
       },
       {
+        id: 3,
         author: "Olga Nelson",
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
