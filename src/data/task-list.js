@@ -11,7 +11,7 @@ export const taskList = [
         content:
           "Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on...",
         text:
-          "Hello! \n" +
+          "Hi! \n" +
           "My name is Kirsten, and I'm super happy to announce that your application to join Coders Family has been accepted!  🎉  🙌\n" +
           "You really impressed us during the interview process, and we'd like to offer you a project with {COMPANY}. We've been working with {COMPANY} for quite some time, and it's important for us to keep them satisfied with our services — hence why we believe you'll be a great fit for this job. \n" +
           "\n" +
@@ -41,7 +41,7 @@ export const taskList = [
         content:
           "Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on...",
         text:
-          "Hello! \n" +
+          "Hellołłłł! \n" +
           "My name is Kirsten, and I'm super happy to announce that your application to join Coders Family has been accepted!  🎉  🙌\n" +
           "You really impressed us during the interview process, and we'd like to offer you a project with {COMPANY}. We've been working with {COMPANY} for quite some time, and it's important for us to keep them satisfied with our services — hence why we believe you'll be a great fit for this job. \n" +
           "\n" +
