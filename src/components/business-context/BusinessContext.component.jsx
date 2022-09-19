@@ -13,9 +13,7 @@ export const BusinessContext = ({ listTask }) => {
       <Line />
     <div>
         <Routes>
-            <Route path="/:title" element={<BusinessList listTask={listTask} />} >
-                <Route path="/:title/:id" element={<BusinessMessage />} />
-            </Route>
+            <Route path="/:title/*" element={<BusinessList listTask={listTask}/>} />
         </Routes>
     </div>
     </Wrapper>
