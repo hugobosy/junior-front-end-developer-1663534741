@@ -1,3 +1,9 @@
+import React from "react";
+import { Layout } from "../components/layout/Layout.component";
+import photo from "../ui/img/foto.png";
+
 export const Home = () => (
-    <h1>Test</h1>
-)
+  <Layout photo={photo}>
+    <h1>sdfsdf</h1>
+  </Layout>
+);
