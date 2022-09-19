@@ -1,4 +1,4 @@
-export const fonts = {
+export const font = {
   family: {
     primary: 'Poppins, sans-serif',
   },
