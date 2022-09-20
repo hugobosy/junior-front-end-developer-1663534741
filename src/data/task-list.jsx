@@ -1,3 +1,5 @@
+import {Avatar} from "../ui/components/avatar/Avatar.component";
+import photo from '../ui/img/foto.png';
 export const taskList = [
   {
     title: "application setup",
@@ -6,6 +8,7 @@ export const taskList = [
       {
         id: 1,
         author: "Olga Nelson",
+        avatar: <Avatar photo={photo} />,
         created_at: "Dec 17",
         title: "Application has been accepted 🎉🤗",
         content:
