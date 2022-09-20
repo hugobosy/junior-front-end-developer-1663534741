@@ -1,6 +1,6 @@
 export const font = {
   family: {
-    primary: 'Poppins, sans-serif',
+    primary: "'Poppins', sans-serif",
   },
   size: {
     xs: ".8rem",
