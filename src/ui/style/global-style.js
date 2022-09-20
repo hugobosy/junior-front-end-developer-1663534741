@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import './fonts.css';
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -17,10 +18,15 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
   }
 
   ul {
     list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: ${({theme}) => theme.color.light}
   }
 `;

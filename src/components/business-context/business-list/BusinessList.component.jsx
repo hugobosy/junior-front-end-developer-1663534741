@@ -1,8 +1,14 @@
 import React from "react";
-import {NavLink, Route, Routes, useParams} from "react-router-dom";
-import { Wrapper } from "./BusinessList.styles";
+import {
+  Route,
+  Routes,
+  useParams,
+} from "react-router-dom";
+import { NavigationLink, Wrapper } from "./BusinessList.styles";
 import { textToLink } from "../../list-task/ListTask.utils";
 import { BusinessMessage } from "../business-message/BusinessMessage.component";
+import { BusinessListWrapper } from "./BusinessList.styles";
+import { MessageCard } from "../../../ui/components/messageCard/MessageCard.component";
 
 export const BusinessList = ({ listTask }) => {
   const { title } = useParams();
@@ -11,21 +17,19 @@ export const BusinessList = ({ listTask }) => {
     .filter((task) => textToLink(task.title) === title)
     .map((task) => task);
 
-  console.log(list);
-
   return (
     <Wrapper>
-      <div>
+      <BusinessListWrapper>
         {list[0].businessContext.map((item) => (
-            <NavLink to={`/${title}/${item.id}`}><p>{item.author}</p></NavLink>
+          <NavigationLink to={`/${title}/${item.id}`}>
+            <MessageCard item={item} title={title} />
+          </NavigationLink>
         ))}
-      </div>
+      </BusinessListWrapper>
 
-      <div>
         <Routes>
-          <Route path="/:id" element={<BusinessMessage list={list}/>} />
+          <Route path="/:id" element={<BusinessMessage list={list} />} />
         </Routes>
-      </div>
     </Wrapper>
   );
 };

@@ -1,21 +1,32 @@
 import React from "react";
-import { Wrapper } from "./BusinessContext.styles";
+import { HeaderWrapper, Wrapper } from "./BusinessContext.styles";
 import { Line } from "../list-task/ListTask.styles";
 import { HeaderText } from "../../ui/components/header-text/HeaderText.component";
 import { Route, Routes } from "react-router-dom";
 import { BusinessList } from "./business-list/BusinessList.component";
-import {BusinessMessage} from "./business-message/BusinessMessage.component";
+import { BiCompass } from "react-icons/bi";
 
 export const BusinessContext = ({ listTask }) => {
   return (
     <Wrapper>
-      <HeaderText caption="Business Context" />
+      <HeaderWrapper>
+        <BiCompass size={25} />
+        <HeaderText
+          caption="Business Context"
+          isUppercase
+          size="small"
+          color={({ theme }) => theme.color.primary}
+        />
+      </HeaderWrapper>
       <Line />
-    <div>
+      <div>
         <Routes>
-            <Route path="/:title/*" element={<BusinessList listTask={listTask}/>} />
+          <Route
+            path="/:title/*"
+            element={<BusinessList listTask={listTask} />}
+          />
         </Routes>
-    </div>
+      </div>
     </Wrapper>
   );
 };
