@@ -17,10 +17,14 @@ const statuses = {
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 23px 26px;
   background-color: #fff;
   border-radius: ${({ theme }) => theme.radius.rad12};
   box-shadow: ${({ theme }) => theme.shadow.bottom};
+  padding-left: 24px;
+  
+  > div {
+    padding-top: 9px;
+  }
   
   li {
     display: flex;
@@ -29,15 +33,21 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const HeaderWrapper = styled.div `
+  display: flex;
+  align-items: center;
+  height: 66px;
+`
+
 export const Line = styled.hr`
   height: 1px;
-  margin: 23px -26px 26px;
+  margin: 0 -26px 0;
   border: none;
   background-color: ${({ theme }) => theme.color.gray.light};
 `;
 
 export const NavigationLink = styled(NavLink)`
-  padding: 15px 0;
+  padding: 8px 0;
   font-size: ${({ theme }) => theme.font.size.m};
   font-weight: ${({ theme }) => theme.font.weights.medium};
   text-transform: capitalize;

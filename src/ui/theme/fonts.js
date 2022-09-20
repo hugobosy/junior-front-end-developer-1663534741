@@ -12,6 +12,7 @@ export const font = {
   weights: {
     medium: 500,
     bold: 600,
+    'extra-bold': 700,
   },
   lineHeight: {
     xxs: '1.2rem',

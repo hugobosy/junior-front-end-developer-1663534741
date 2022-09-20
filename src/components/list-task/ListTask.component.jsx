@@ -1,14 +1,20 @@
 import React from "react";
 import { HeaderText } from "../../ui/components/header-text/HeaderText.component";
-import { Line, LinkText, NavigationLink, Wrapper } from "./ListTask.styles";
-import { NavLink } from "react-router-dom";
+import {
+  HeaderWrapper,
+  Line,
+  NavigationLink,
+  Wrapper,
+} from "./ListTask.styles";
 import { textToLink } from "./ListTask.utils";
 import { Square } from "../../ui/components/square/Square.component";
-import { Paragraph } from "../../ui/components/paragraph/Paragraph.component";
 
 export const ListTasks = ({ listTask }) => (
   <Wrapper>
-    <HeaderText caption="Your Tasks" />
+    <HeaderWrapper>
+      <HeaderText caption="Your Tasks" isUppercase size="small" />
+    </HeaderWrapper>
+
     <Line />
     <div>
       <ul>
@@ -17,7 +23,7 @@ export const ListTasks = ({ listTask }) => (
             <Square status={item.status} />
             {item.status !== "disabled" ? (
               <NavigationLink
-                to={`/${textToLink(item.title)}`}
+                to={`/${textToLink(item.title)}/1`}
                 status={item.status}
               >
                 {item.title}
