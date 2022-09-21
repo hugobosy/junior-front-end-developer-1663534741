@@ -6,7 +6,8 @@ import { Route, Routes } from "react-router-dom";
 import { BusinessList } from "./business-list/BusinessList.component";
 import { BiCompass } from "react-icons/bi";
 
-export const BusinessContext = ({ listTask }) => {
+export const BusinessContext = () => {
+
   return (
     <Wrapper>
       <HeaderWrapper>
@@ -23,7 +24,7 @@ export const BusinessContext = ({ listTask }) => {
         <Routes>
           <Route
             path="/:title/*"
-            element={<BusinessList listTask={listTask} />}
+            element={<BusinessList />}
           />
         </Routes>
       </div>

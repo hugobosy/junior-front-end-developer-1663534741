@@ -1,24 +1,28 @@
 import React from "react";
 import { Paragraph } from "../paragraph/Paragraph.component";
 import { New } from "./new/New.component";
-import { Content, Label, Title, Wrapper } from "./MessageCard.styles";
+import { Label, Title, Wrapper } from "./MessageCard.styles";
 
-export const MessageCard = ({
-  item: { author, created_at, title: itemTitle, content, isNew } , isActive
-}) => {
+export const MessageCard = ({ item, setBusinessList, id }) => {
   return (
-    <Wrapper isNew={isNew}>
+    <Wrapper
+      isNew={item.isNew}
+      onClick={() => {
+        setBusinessList((current) =>
+          current.map((obj) => (obj.id === id ? { ...obj, isNew: false } : obj))
+        );
+      }}
+    >
       <Label>
-        {isNew && <New />}
-        <Paragraph caption={author} />
-        <Paragraph caption={created_at} />
+        {item.isNew && <New />}
+        <Paragraph caption={item.author} />
+        <span>•</span>
+        <Paragraph caption={item.created_at} />
       </Label>
-      <Title isNew={isNew}>
-        <Paragraph caption={itemTitle} isNew={isNew} />
+      <Title isNew={item.isNew}>
+        <Paragraph caption={item.title} isNew={item.isNew} />
       </Title>
-      <Content>
-        <Paragraph caption={content} />
-      </Content>
+      <Paragraph caption={item.content} />
     </Wrapper>
   );
 };

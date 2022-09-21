@@ -30,3 +30,19 @@ export const Content = styled.div`
     padding-bottom: 30px;
   }
 `;
+
+export const Button = styled.button `
+  padding: 10px 20px;
+  background-color: ${({theme}) => theme.color.success.dark};
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+  
+  &:hover {
+    opacity: .8;
+  }
+`
+export const Dot = styled.span `
+  padding: 0 5px;
+`
