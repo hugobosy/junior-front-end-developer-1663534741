@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { HeaderText } from "../../ui/components/header-text/HeaderText.component";
 import {
   HeaderWrapper,
@@ -8,32 +8,39 @@ import {
 } from "./ListTask.styles";
 import { textToLink } from "./ListTask.utils";
 import { Square } from "../../ui/components/square/Square.component";
+import { DataContext } from "../../App";
 
-export const ListTasks = ({ listTask }) => (
-  <Wrapper>
-    <HeaderWrapper>
-      <HeaderText caption="Your Tasks" isUppercase size="small" />
-    </HeaderWrapper>
+export const ListTasks = () => {
+  const { data } = useContext(DataContext);
 
-    <Line />
-    <div>
-      <ul>
-        {listTask.map((item) => (
-          <li>
-            <Square status={item.status} />
-            {item.status !== "disabled" ? (
-              <NavigationLink
-                to={`/${textToLink(item.title)}/1`}
-                status={item.status}
-              >
-                {item.title}
-              </NavigationLink>
-            ) : (
-              <NavigationLink status={item.status}>{item.title}</NavigationLink>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
-  </Wrapper>
-);
+  return (
+    <Wrapper>
+      <HeaderWrapper>
+        <HeaderText caption="Your Tasks" isUppercase size="small" />
+      </HeaderWrapper>
+
+      <Line />
+      <div>
+        <ul>
+          {data.map(({ status, title }) => (
+            <li key={title}>
+              <Square status={status} />
+              {status !== "disabled" ? (
+                <NavigationLink
+                  to={`/${textToLink(title)}/1`}
+                  status={status}
+                >
+                  {title}
+                </NavigationLink>
+              ) : (
+                <NavigationLink status={status}>
+                  {title}
+                </NavigationLink>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Wrapper>
+  );
+};

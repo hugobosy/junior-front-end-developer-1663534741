@@ -13,3 +13,7 @@ export const Links = styled.div`
 export const InfoVersion = styled.div`
   display: flex;
 `;
+
+export const Dot = styled.span `
+  padding: 0 5px;
+`

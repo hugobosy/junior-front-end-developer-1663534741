@@ -30,4 +30,3 @@ export const Title = styled.div`
       font-weight: ${({ theme }) => theme.font.weights["extra-bold"]};
     `}
 `;
-export const Content = styled.div``;
